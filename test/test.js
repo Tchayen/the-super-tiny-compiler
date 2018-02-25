@@ -1,11 +1,12 @@
+const assert = require('assert');
+const theSuperTinyCompiler = require('../lib/the-super-tiny-compiler');
 const {
   tokenizer,
   parser,
   transformer,
   codeGenerator,
   compiler,
-} = require('./the-super-tiny-compiler');
-const assert = require('assert');
+} = theSuperTinyCompiler.default;
 
 const input  = '(add 2 (subtract 4 2))';
 const output = 'add(2, subtract(4, 2));';

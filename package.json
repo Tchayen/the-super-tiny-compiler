@@ -3,5 +3,19 @@
   "version": "1.0.0",
   "author": "James Kyle <me@thejameskyle.com> (thejameskyle.com)",
   "license": "CC-BY-4.0",
-  "main": "./the-super-tiny-compiler.js"
+  "main": "./the-super-tiny-compiler.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "description": "[![The Super Tiny Compiler](https://cloud.githubusercontent.com/assets/952783/21579290/5755288a-cf75-11e6-90e0-029529a44a38.png)](the-super-tiny-compiler.js)",
+  "dependencies": {},
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tchayen/the-super-tiny-compiler.git"
+  },
+  "homepage": "https://github.com/Tchayen/the-super-tiny-compiler#readme"
 }
